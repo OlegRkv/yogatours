@@ -6,7 +6,9 @@
 body {
   margin: 0;
   font-size: 18px;
-  font-family: sans-serif;
+  font-family: 'Muller', sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .container {
@@ -22,6 +24,8 @@ body {
   background-color: transparent;
   text-transform: uppercase;
   font-size: 12px;
+  font-family: 'Muller', sans-serif;
+  font-weight: 700;
 }
 
 .header {
@@ -51,12 +55,20 @@ body {
 
 .header-top_call {
   display: block;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.header-top_phone {
+  font-size: 20px;
+  font-weight: 700;
 }
 
 .header_title {
   margin-bottom: 35px;
   text-transform: uppercase;
   font-size: 60px;
+  font-weight: 500;
 }
 
 .header_subtitle {
@@ -77,14 +89,143 @@ body {
   width: 300px;
   height: 60px;
   margin: 0 auto;
+  margin-bottom: 140px;
   border: 1px solid #fff;
   font-size: 18px;
   text-transform: uppercase;
   color: #fff;
+  -webkit-transition: .6s;
+  transition: .6s;
 }
 
 .header_button:hover {
   background-color: #db883c;
   border: none;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.header-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ffffff;
+  border-radius: 100%;
+  color: #ffffff;
+  font-size: 15px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.header-social:hover {
+  background-color: #db883c;
+  border-color: #db883c;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.header-social-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 115px;
+  margin: 0 auto;
+}
+
+.header-social_link {
+  text-decoration: none;
+}
+
+.about {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #f8f2e4;
+}
+
+.about-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: top;
+      -ms-flex-align: top;
+          align-items: top;
+}
+
+.about-descr {
+  max-width: 390px;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.about-descr_title {
+  margin-bottom: 45px;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.about-descr_title__bold {
+  display: block;
+  margin-top: 15px;
+  font-size: 48px;
+  text-transform: uppercase;
+}
+
+.about-descr-icons .yoga::before {
+  position: absolute;
+  content: url("../img/about/yoga_mat.png");
+  top: -3px;
+  left: 0;
+  width: 30px;
+  height: 20px;
+}
+
+.about-descr-icons .sea::before {
+  position: absolute;
+  content: url("../img/about/sea.png");
+  top: -7px;
+  left: 0;
+  width: 30px;
+  height: 20px;
+}
+
+.about-descr-icons .trip::before {
+  position: absolute;
+  content: url("../img/about/plane.png");
+  top: -3px;
+  left: 0;
+  width: 30px;
+  height: 20px;
+}
+
+.about-descr_icon {
+  position: relative;
+  min-height: 20px;
+  margin-bottom: 26px;
+  padding-left: 55px;
+  font-weight: 300;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.about_descr {
+  margin-bottom: 40px;
+  font-weight: 300;
 }
 /*# sourceMappingURL=style.css.map */

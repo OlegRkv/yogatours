@@ -4,7 +4,9 @@
 body
 	margin: 0
 	font-size: 18px
-	font-family: sans-serif			
+	font-family: 'Muller', sans-serif
+	font-weight: 400
+	font-style: normal			
 
 .container
 	max-width: 940px
@@ -18,6 +20,8 @@ body
 	background-color: transparent
 	text-transform: uppercase
 	font-size: 12px
+	font-family: 'Muller', sans-serif
+	font-weight: 700
 
 .header
 	min-height: 829px
@@ -30,14 +34,20 @@ body
 		display: flex
 		justify-content: space-between
 		align-items: center
-		&-call
+		&-call			
 			text-align: right
-		&_call
+		&_call			
 			display: block
+			margin-bottom: 10px
+			font-size: 14px
+		&_phone
+			font-size: 20px
+			font-weight: 700	
 	&_title
 		margin-bottom: 35px
 		text-transform: uppercase
 		font-size: 60px
+		font-weight: 500
 	&_subtitle
 		display: block
 		margin-bottom: 15px
@@ -52,12 +62,99 @@ body
 		width: 300px
 		height: 60px
 		margin: 0 auto
+		margin-bottom: 140px
 		border: 1px solid #fff
 		font-size: 18px
 		text-transform: uppercase
 		color: #fff
+		transition: .6s
+		&:hover			
+			background-color: #db883c
+			border: none
+			transition: .3s
+	&-social
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 30px
+		height: 30px
+		border: 1px solid #ffffff
+		border-radius: 100%
+		color: #ffffff
+		font-size: 15px		
+		transition: 1s	
 		&:hover
-			background-color: #db883c;
-			border: none				
+			background-color: #db883c
+			border-color: #db883c
+			transition: .3s
+		&-wrapper
+			display: flex
+			justify-content: space-between
+			align-items: center
+			max-width: 115px
+			margin: 0 auto
+		&_link
+			text-decoration: none				
+//End .header
+
+//About
+.about
+	padding-top: 50px
+	padding-bottom: 50px
+	background-color: #f8f2e4
+	&-wrapper		
+		display: flex
+		justify-content: space-between
+		align-items: top
+	&-descr
+		max-width: 390px		
+		font-weight: 400
+		font-size: 16px
+		&_title
+			margin-bottom: 45px
+			font-size: 30px
+			font-weight: 500
+			&__bold
+				display: block
+				margin-top: 15px
+				font-size: 48px
+				text-transform: uppercase
+		&-icons			
+			.yoga								
+				&::before
+					position: absolute
+					content: url('../img/about/yoga_mat.png')
+					top: -3px
+					left: 0
+					width: 30px
+					height: 20px
+			.sea						
+				&::before
+					position: absolute
+					content: url('../img/about/sea.png')
+					top: -7px
+					left: 0
+					width: 30px
+					height: 20px
+			.trip								
+				&::before
+					position: absolute
+					content: url('../img/about/plane.png')
+					top: -3px
+					left: 0
+					width: 30px
+					height: 20px				
+		&_icon
+			position: relative
+			min-height: 20px
+			margin-bottom: 26px
+			padding-left: 55px
+			font-weight: 300
+			font-size: 18px
+			text-transform: uppercase
+	&_descr
+		margin-bottom: 40px
+		font-weight: 300		
+
 			
 	
