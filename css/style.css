@@ -28,6 +28,25 @@ body {
   font-weight: 700;
 }
 
+.title {
+  position: relative;
+  margin-bottom: 100px;
+  font-weight: 500;
+  font-size: 36px;
+  text-align: center;
+}
+
+.title::before {
+  position: absolute;
+  content: url("../img/reasons/line.svg");
+  width: 119px;
+  height: 6px;
+  top: 20px;
+  left: 50%;
+  -webkit-transform: translateX(-60px);
+          transform: translateX(-60px);
+}
+
 .header {
   min-height: 829px;
   padding-top: 20px;
@@ -227,5 +246,30 @@ body {
 .about_descr {
   margin-bottom: 40px;
   font-weight: 300;
+}
+
+.reasons {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.reasons-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: top;
+      -ms-flex-align: top;
+          align-items: top;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.reasons-list-item {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

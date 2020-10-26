@@ -23,6 +23,21 @@ body
 	font-family: 'Muller', sans-serif
 	font-weight: 700
 
+.title
+	position: relative
+	margin-bottom: 100px
+	font-weight: 500
+	font-size: 36px
+	text-align: center
+	&::before
+			position: absolute
+			content: url('../img/reasons/line.svg')
+			width: 119px
+			height: 6px
+			top: 20px
+			left: 50%
+			transform: translateX(-60px)	
+
 .header
 	min-height: 829px
 	padding-top: 20px
@@ -154,7 +169,22 @@ body
 			text-transform: uppercase
 	&_descr
 		margin-bottom: 40px
-		font-weight: 300		
+		font-weight: 300
+// End .about
+
+//Reasons
+.reasons
+	padding-top: 80px
+	padding-bottom: 80px	
+	&-list
+		display: flex
+		justify-content: space-between
+		align-items: top
+		flex-wrap: wrap
+		&-item
+			flex-basis: 30%
+			text-align: center
+//End reasons									
 
 			
 	
