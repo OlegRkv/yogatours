@@ -272,4 +272,117 @@ body {
       flex-basis: 30%;
   text-align: center;
 }
+
+.schedule {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.schedule-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.schedule-list-item {
+  width: 220px;
+  height: 180px;
+  margin-bottom: 20px;
+  padding-top: 30px;
+  text-align: center;
+  background-color: #fff8e6;
+}
+
+.schedule-list-item_date {
+  margin-top: 0;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.schedule-list-item_program {
+  margin-top: 0;
+  margin-bottom: 17px;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.schedule-list-item_link {
+  display: block;
+  margin-bottom: 18px;
+  color: #5a56af;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.schedule-list-item_button {
+  display: block;
+  margin: 0 auto;
+  font-size: 12px;
+  color: #e28234;
+  border: 2px solid #e28234;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.schedule-list-item_button:hover {
+  color: #ffffff;
+  background-color: #e28234;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.ayurveda {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.ayurveda-descr {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.ayurveda_descr {
+  margin-bottom: 22px;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.ayurveda_subtitle {
+  margin-bottom: 60px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.ayurveda-list {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.ayurveda-list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+
+.ayurveda-list-item_img {
+  margin-right: 40px;
+}
+
+.ayurveda-list-item_descr {
+  font-size: 18px;
+  font-weight: 300;
+}
 /*# sourceMappingURL=style.css.map */
