@@ -9,10 +9,10 @@ body
 	font-style: normal			
 
 .container
-	max-width: 940px
+	max-width: 960px
 	margin: 0 auto
-	padding-left: 15px
-	padding-right: 15px	
+	padding-left: 10px
+	padding-right: 10px	
 
 .button
 	width: 180px
@@ -259,8 +259,60 @@ body
 				font-size: 18px
 				font-weight: 300
 //End Ayurveda
-	
-						
-									
+
+//Center
+.center
+	padding-top: 30px
+	.container
+		position: relative
+		&::before
+			position: absolute
+			content: ''
+			width: 725px
+			height: 265px
+			top: -20px
+			left: -10px
+			z-index: -1
+			background-color: #f8f2e4
+	&-wrapper
+		display: flex
+		justify-content: space-between
+		align-items: start
+	&-img
+		margin: 0
+		width: 477px
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+	&_img
+		width: 139px
+		height: 139px		
+		margin: 10px								
+	&-text
+		max-width: 430px
+	&_title
+		margin-bottom: 10px
+		font-weight: 500
+		font-size: 30px
+	&_subtitle
+		margin-top: 0
+		font-weight: 300
+		font-size: 14px						
+	&_descr
+		font-weight: 300
+		font-size: 12px
+		line-height: 15px
+	&-service
+		max-width: 190px
+		padding: 0	
+		list-style-image: url("../img/center/mark.png")
+		&-wrapper
+			display: flex
+			justify-content: space-between
+			padding-left: 20px			
+		&_item
+			margin-bottom: 10px			
+			font-weight: 300
+			font-size: 12px									
 			
 	

@@ -12,10 +12,10 @@ body {
 }
 
 .container {
-  max-width: 940px;
+  max-width: 960px;
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .button {
@@ -384,5 +384,99 @@ body {
 .ayurveda-list-item_descr {
   font-size: 18px;
   font-weight: 300;
+}
+
+.center {
+  padding-top: 30px;
+}
+
+.center .container {
+  position: relative;
+}
+
+.center .container::before {
+  position: absolute;
+  content: '';
+  width: 725px;
+  height: 265px;
+  top: -20px;
+  left: -10px;
+  z-index: -1;
+  background-color: #f8f2e4;
+}
+
+.center-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.center-img {
+  margin: 0;
+  width: 477px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.center_img {
+  width: 139px;
+  height: 139px;
+  margin: 10px;
+}
+
+.center-text {
+  max-width: 430px;
+}
+
+.center_title {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.center_subtitle {
+  margin-top: 0;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.center_descr {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.center-service {
+  max-width: 190px;
+  padding: 0;
+  list-style-image: url("../img/center/mark.png");
+}
+
+.center-service-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 20px;
+}
+
+.center-service_item {
+  margin-bottom: 10px;
+  font-weight: 300;
+  font-size: 12px;
 }
 /*# sourceMappingURL=style.css.map */
