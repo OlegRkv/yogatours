@@ -41,7 +41,7 @@ body {
   content: url("../img/reasons/line.svg");
   width: 119px;
   height: 6px;
-  top: 20px;
+  top: 30px;
   left: 50%;
   -webkit-transform: translateX(-60px);
           transform: translateX(-60px);
@@ -478,5 +478,98 @@ body {
   margin-bottom: 10px;
   font-weight: 300;
   font-size: 12px;
+}
+
+.advantages {
+  padding-top: 80px;
+  padding-bottom: 115px;
+  background-color: #f8f2e4;
+}
+
+.advantages-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.advantages-list_item {
+  position: relative;
+  -ms-flex-preferred-size: 28%;
+      flex-basis: 28%;
+  margin-bottom: 55px;
+  padding-top: 160px;
+  text-align: center;
+}
+
+.advantages-list_item__1::before {
+  position: absolute;
+  content: url("../img/advantages/pic1.png");
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-60px);
+          transform: translateX(-60px);
+}
+
+.advantages-list_item__2::before {
+  position: absolute;
+  content: url("../img/advantages/pic2.png");
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-60px);
+          transform: translateX(-60px);
+}
+
+.advantages-list_item__3::before {
+  position: absolute;
+  content: url("../img/advantages/pic3.png");
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-60px);
+          transform: translateX(-60px);
+}
+
+.advantages-list_item__4::before {
+  position: absolute;
+  content: url("../img/advantages/pic4.png");
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-60px);
+          transform: translateX(-60px);
+}
+
+.advantages-list_item__5::before {
+  position: absolute;
+  content: url("../img/advantages/pic5.png");
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-60px);
+          transform: translateX(-60px);
+}
+
+.advantages-list_item__6::before {
+  position: absolute;
+  content: url("../img/advantages/pic6.png");
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-60px);
+          transform: translateX(-60px);
+}
+
+.advantages-list_title {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.advantages-list_descr {
+  font-weight: 300;
+  font-size: 16px;
 }
 /*# sourceMappingURL=style.css.map */
