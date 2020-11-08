@@ -26,6 +26,14 @@ body {
   font-size: 12px;
   font-family: 'Muller', sans-serif;
   font-weight: 700;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.button:hover {
+  cursor: pointer;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 .title {
@@ -124,7 +132,21 @@ body {
   transition: .3s;
 }
 
-.header-social {
+.header-social-list {
+  padding-left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style-type: none;
+}
+
+.header-social_link {
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -134,39 +156,19 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 30px;
-  height: 30px;
-  border: 1px solid #ffffff;
+  border: 2px solid #ffffff;
   border-radius: 100%;
   color: #ffffff;
-  font-size: 15px;
-  -webkit-transition: 1s;
-  transition: 1s;
-}
-
-.header-social:hover {
-  background-color: #db883c;
-  border-color: #db883c;
+  text-decoration: none;
   -webkit-transition: .3s;
   transition: .3s;
 }
 
-.header-social-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  max-width: 115px;
-  margin: 0 auto;
-}
-
-.header-social_link {
-  text-decoration: none;
+.header-social_link:hover {
+  border-color: #e28234;
+  background-color: #e28234;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 .about {
@@ -571,5 +573,361 @@ body {
 .advantages-list_descr {
   font-weight: 300;
   font-size: 16px;
+}
+
+.work {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+.work_title {
+  margin-bottom: 65px;
+}
+
+.work_subtitle {
+  margin-bottom: 60q;
+}
+
+.work-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.work-list-item {
+  position: relative;
+  max-width: 125px;
+  font-size: 12px;
+}
+
+.work-list-item::before {
+  position: absolute;
+  content: url("../img/work/arrow.png");
+  width: 25px;
+  height: 17px;
+  top: 35px;
+  left: 105%;
+}
+
+.work-list-item:last-child::before {
+  content: none;
+}
+
+.work-list-item_link {
+  color: #ea7231;
+  font-size: 12px;
+}
+
+.price {
+  padding-top: 80px;
+  padding-bottom: 75px;
+  background-color: #f8f2e4;
+}
+
+.price-wrapper {
+  margin: 0 auto;
+  margin-bottom: 50px;
+  max-width: 820px;
+  max-height: 280px;
+}
+
+.price-tours {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  max-height: 210px;
+  padding: 50px 50px 45px 50px;
+  background-color: #fff;
+}
+
+.price-tours_days__bold {
+  font-weight: 700;
+}
+
+.price-tours_cost {
+  color: #dd490f;
+}
+
+.price-tours_cost__bold {
+  font-weight: 700;
+}
+
+.price-special {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 55px 15px 50px;
+  max-height: 70px;
+  background-color: #f4e1b6;
+}
+
+.price-special_button {
+  color: #e28234;
+  border: 2px solid #e28234;
+}
+
+.price-special_button:hover {
+  color: #ffffff;
+  background-color: #e28234;
+}
+
+.price-inclusive-list {
+  max-width: 650px;
+  margin: 0 auto;
+  margin-bottom: 45px;
+  font-size: 18px;
+  color: #4e4e4e;
+  list-style-image: url("../img/price/mark.svg");
+}
+
+.price-inclusive-list_item {
+  padding-left: 10px;
+}
+
+.price_inclusive-on {
+  margin-bottom: 35px;
+  font-weight: 500;
+  font-size: 24px;
+  text-align: center;
+}
+
+.price_inclusive-off {
+  margin-bottom: 35px;
+  font-weight: 500;
+  font-size: 24px;
+  text-align: center;
+}
+
+.price-list-off {
+  max-width: 650px;
+  margin: 0 auto;
+  margin-bottom: 48px;
+  font-size: 18px;
+  color: #4e4e4e;
+  list-style-image: url("../img/price/x.svg");
+}
+
+.price-list_item-off {
+  padding-left: 10px;
+}
+
+.safety {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.safety_descr {
+  margin-bottom: 60px;
+  font-weight: 300;
+  font-size: 16px;
+  font-style: italic;
+  text-align: center;
+}
+
+.safety_get {
+  margin-bottom: 35px;
+  font-weight: 500;
+  font-size: 24px;
+  text-align: center;
+}
+
+.safety-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.safety-item {
+  max-width: 185px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.contacts {
+  padding-top: 50px;
+  padding-bottom: 55px;
+  background-color: #fcf9f1;
+}
+
+.contacts_title {
+  font-weight: 500;
+  font-size: 22px;
+}
+
+.contacts-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.contacts-social {
+  margin-right: 135px;
+}
+
+.contacts-social_title {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.contacts-social-list {
+  padding-left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  list-style-type: none;
+}
+
+.contacts-social_link {
+  margin-right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #e28234;
+  border-radius: 100%;
+  color: #e28234;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.contacts-social_link:hover {
+  color: #ffffff;
+  background-color: #e28234;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.contacts-phone_title {
+  margin-bottom: 12px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.contacts-phone_subtitle {
+  margin-bottom: 7px;
+  font-weight: 300;
+  font-size: 12px;
+  font-style: italic;
+}
+
+.contacts_phone {
+  margin: 0;
+  color: #000;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.contacts_offices {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.contacts .offices-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.contacts .offices-item {
+  margin-right: 10px;
+}
+
+.contacts .offices-item_descr {
+  font-size: 11px;
+}
+
+.footer {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #383838;
+}
+
+.footer-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-link_img {
+  margin-right: 30px;
+}
+
+.footer-link_descr {
+  font-size: 12px;
+  color: #ffffff;
+}
+
+.footer_link {
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.footer-requisites {
+  font-size: 12px;
+  color: #ffffff;
 }
 /*# sourceMappingURL=style.css.map */
