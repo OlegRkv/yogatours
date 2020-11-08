@@ -380,6 +380,8 @@ body {
 }
 
 .ayurveda-list-item_img {
+  width: 120px;
+  height: 120px;
   margin-right: 40px;
 }
 
